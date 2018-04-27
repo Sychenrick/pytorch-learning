@@ -16,7 +16,7 @@ data_tf = transforms.Compose(
      transforms.Normalize([0.5],[0.5])]
 )
 train_dataset = datasets.MNIST(
-    root='../data',train=True,transform=data_tf,download=False
+    root='../data',train=True,transform=data_tf,download=True
 )
 test_dataset = datasets.MNIST(
     root="../data",train=False,transform=data_tf
